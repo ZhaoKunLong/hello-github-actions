@@ -4,15 +4,11 @@ This course will walk you through writing your first action and using it with a 
 
 **Ready to get started? Navigate to the first issue.**
 
+# action 分为  container action  和JavaScript Actions。
+- 一般都是使用 container action。  所以需要 了解dockerfile. docker 将会在GitHub host 的 Linux 环境里面创建
+- JavaScript action 能够更快的执行，但是需要自己管理代码。
 
-Step 
-1. Create DockerFile
-  -  create DockerFile, DockerFile add the entrypoint.sh into docker. End run the entrypoint
-  - ENTRYPOINT in docker is run a cmd
-2. Create entrypoint.sh
-  - only for the docker. When docker run will execute `ENTRYPOINT` cmd.
-3. Create action.yml
-  - we'll define the action.yml file which contains the metadata for our action.
-  - This is for the github workflow metadata. will define all the input and image use.
-4. Create the workflow 
-  - Execute base on the github event.
+
+## 开始创建一个action 创建 分支 和文件
+- branch - action-b
+- DockerFile
