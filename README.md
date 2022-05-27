@@ -12,3 +12,12 @@ This course will walk you through writing your first action and using it with a 
 ## 开始创建一个action 创建 分支 和文件
 - branch - action-b
 - DockerFile
+
+## 创建dockerfile， 里面的内容是，继debian 镜像 然后将 action-b 里面的entrypoint.sh 添加到镜像内，然后修改执行权限。
+- [ENTRYPOINT 的讲解](https://yeasy.gitbook.io/docker_practice/image/dockerfile/entrypoint) 是一个入口执行命令。可以接受运行镜像时候的CMD 参数
+- 这样 整个镜像其实就是一个有entrypoint.sh的容器。
+- 容器build run 时执行 entrypoint.sh
+- 这里的意思就是在运行镜像的时候执行 sh entrypoint.sh
+- entrypoint 的内容 ， sh -c 代表， 使用 shell 执行 cmd
+
+## 
