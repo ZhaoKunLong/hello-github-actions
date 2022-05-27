@@ -20,4 +20,9 @@ This course will walk you through writing your first action and using it with a 
 - 这里的意思就是在运行镜像的时候执行 sh entrypoint.sh
 - entrypoint 的内容 ， sh -c 代表， 使用 shell 执行 cmd
 
-## 
+## 当运行这个Docker 的时候， 需要一些环境变量。以及定义 一个Action的所需的metadata（元数据）。 所有的这些都会被放到 action.yml 文件里面
+- 创建action.yml。 
+- inputs 里面放的是 注入到 容器内的变量
+- runs 是代表这个action 执行的类型
+- branding 是一个action 执行的颜色配置
+- name/ description / author 代表 action的基本数据

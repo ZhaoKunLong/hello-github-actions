@@ -1,0 +1,17 @@
+name: "Action-b"
+description: "my second action"
+author: "octocat@github.com"
+
+inputs:
+  MY_NAME:
+    description: "Who am I?"
+    required: true
+    default: "Scott long"
+
+runs:
+  using: "docker"
+  imaging: "DockerFile"
+
+branding:
+  icon: "mic"
+  color: "purple"
