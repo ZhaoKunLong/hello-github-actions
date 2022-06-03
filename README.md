@@ -54,3 +54,10 @@ This course will walk you through writing your first action and using it with a 
   - steps 里面定义的就是步骤
   - uses actions/checkout@v1 代表的意思是。让这个集合体/让当前这个Action 可以访问到仓库代码
   - uses ./actions-b 提供出一个步骤的路径。 通过这个路径找到 action.yml 然后进行子步骤的执行 里面的参数可以传递到docker中`
+
+
+
+
+  ## 错误
+    - `Dockerfile` 必须 `D`大写 `f` 小写。 这会导致，镜像名称大写。无法构建
+    - `chmod +x /entrypoint.sh` 是给予权限
