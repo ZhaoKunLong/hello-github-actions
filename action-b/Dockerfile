@@ -2,4 +2,4 @@ FROM debian:9.5-slim
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["sh", "-c", "echo hello fuck"]
+ENTRYPOINT ["sh", "-c", "entrypoint.sh"]
