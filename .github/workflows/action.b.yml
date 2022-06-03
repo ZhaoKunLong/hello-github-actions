@@ -1,0 +1,17 @@
+name: Action b actions
+on:
+  push:
+    branches:
+      - "feature/action-b"
+jobs:
+  build:
+    name: action-b
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          ref: "feature/action-b"
+      - uses: ./action-b
+        with:
+          MY_NAME: "Big tea"
+    
