@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./action-b
         with:
-          MY_NAME: Big tea
+          MY_NAME: "Big tea"
     
