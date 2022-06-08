@@ -4,7 +4,7 @@ on:
     branches:
       - "feature/action-b"
 jobs:
-  build:
+  action_b_build:
     name: action-b
     runs-on: ubuntu-latest
     steps:
