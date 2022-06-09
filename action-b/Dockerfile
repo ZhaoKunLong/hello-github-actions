@@ -4,4 +4,4 @@ ADD sayHello.sh /sayHello.sh
 RUN chmod +x /sayHello.sh
 RUN ls -all
 WORKDIR /
-CMD ["sayHello.sh"]
+CMD sayHello.sh
