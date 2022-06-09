@@ -5,7 +5,7 @@ on:
       - "feature/action-b"
 jobs:
   action_b_build:
-   name: action-b
+    name: action-b
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
