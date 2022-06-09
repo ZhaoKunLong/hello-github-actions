@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: user action b
-        uses: action-b
+        uses: ./action-b
         with:
           MY_NAME: "Big tea"
     
