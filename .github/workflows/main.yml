@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         
-      - uses: ./actions-a
+      - uses: ./action-a/action.yml
         with:
           MY_NAME: "the Name"
