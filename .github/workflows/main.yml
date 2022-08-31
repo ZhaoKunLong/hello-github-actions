@@ -1,6 +1,8 @@
-name: Workflow for the actions demo
-on: push
 
+name: A workflow for my Hello World file
+on: 
+  push: 
+    branches: ["main"]
 jobs:
   build:
     name: run the jobs

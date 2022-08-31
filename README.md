@@ -61,3 +61,4 @@ This course will walk you through writing your first action and using it with a 
   ## 错误
     - `Dockerfile` 必须 `D`大写 `f` 小写。 这会导致，镜像名称大写。无法构建
     - `chmod +x /entrypoint.sh` 是给予权限
+    - 一直提示 docker 中没有需要的文件 `standard_init_linux.go:228: exec user process caused: no such file or directory` 就使用 `ENTRYPOINT ["sh","-C", "/sayHello.sh"] ` 通过 sh 去执行，并在本地 chmod +x 文件夹。 让其能够访问

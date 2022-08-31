@@ -4,14 +4,15 @@ on:
     branches:
       - "feature/action-b"
 jobs:
-  build:
-    name: action-b
+  action_b_build:
+    name: build action-b ref
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
-          ref: "feature/action-b"
-      - uses: ./action-b
+          ref: 'feature/action-b'
+      - name: user action b
+        uses: ./action-b
         with:
           MY_NAME: "Big tea"
     

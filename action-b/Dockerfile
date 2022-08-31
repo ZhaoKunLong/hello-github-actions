@@ -1,5 +1,7 @@
 FROM debian:9.5-slim
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["sh", "-c", "entrypoint.sh"]
+ADD test.sh /test.sh
+ADD sayHello.sh /sayHello.sh
+RUN chmod +x /sayHello.sh
+RUN ls -all
+ENTRYPOINT ["sh","-C", "/test.sh"] 

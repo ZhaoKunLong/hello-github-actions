@@ -1,19 +1,19 @@
-name: "Action B"
-description: "my second action"
-author: "octocat@github.com"
+name: Action for b
+description: my second action
+author: octocat@github.com
 
 inputs:
   MY_NAME:
-    description: "Who am I?"
+    description: Who am I?
     required: true
-    default: "Scott long"
+    default: Scott long
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: docker
+  image: Dockerfile
   env:
-    MY_NAME: "Scott R2D2"
+    MY_NAME: Scott R2D2
 
 branding:
-  icon: "mic"
-  color: "purple"
+  icon: mic
+  color: purple
