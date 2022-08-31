@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         
-      - uses: ../action-a/action.yml
+      - uses: action-a/action.yml
         with:
           MY_NAME: "the Name"
