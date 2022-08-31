@@ -1,13 +1,13 @@
+
 name: A workflow for my Hello World file
 on: 
   push: 
     branches: ["main"]
 jobs:
   build:
-    name: Hello world action
+    name: run the jobs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+
       - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
