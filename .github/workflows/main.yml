@@ -3,10 +3,11 @@ on: push
 
 jobs:
   build:
+    name: run the jobs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
         
-      - uses: ./action-a/action.yml
+      - uses: ../action-a/action.yml
         with:
           MY_NAME: "the Name"
